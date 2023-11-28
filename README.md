@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# PodCraft
+
+This web application, built using Next.js, is designed to streamline the process of creating podcast scripts and generating interview questions for hosts based on guest names.
+
+## Features
+
+### Podcast Script Generation
+- **Script Editor:** Utilize a user-friendly interface to create, edit, and organize podcast scripts.
+- **Customization:** Format your scripts with markdown, add timestamps, headings, and more.
+- **Preview:** Instantly preview the script to visualize how it will appear in the final podcast.
+
+### Interview Question Generation
+- **Guest Name Input:** Enter guest names to prompt the system to generate interview questions specifically tailored to each guest.
+- **Question Variety:** Generates a wide variety of interview questions based on the topic and specifically for the guest entered using GenAI
 
 ## Getting Started
 
-First, run the development server:
+### Installation
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clone this repository.
+2. Install dependencies using `npm install` or `yarn install`.
+3. Run the development server using `npm run dev` or `yarn dev`.
+4. Open your browser and visit `http://localhost:3000` to access the application.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Usage  
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+   - In the left side add the topic of your podcast like **"Recession in India"**
+   - Select the tone of the script you want it in either formal,informal and many more...
+   - Select whether or not guests are coming.
+   - Click on Add Guest and enter the details.
+   - After that click on generate script and see the magic🪄 happens .
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Technologies Used
 
-## Learn More
+- **Next.js:** A React-based web framework for building the application.
+- **React:** Used for building the user interface components.
+- **Markdown:** Formatting tool for creating structured podcast scripts.
+- **Google PALM2 GenAI:** Gen AI for generating scripts.  
+- **JavaScript:** Programming languages used for the functionality of the app.
 
-To learn more about Next.js, take a look at the following resources:
+## Contribution
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Contributions are welcome! Feel free to submit issues or pull requests for any improvements or new features you'd like to suggest.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
