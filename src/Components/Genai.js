@@ -5,7 +5,6 @@ import state from "./States";
 const Genai = async ({ snap }) => {
   let string = ""
   state.generating=true;
-  console.log(process.env.NEXT_PUBLIC_KEY)
   const openai = new OpenAI({
     apiKey: process.env.NEXT_PUBLIC_KEY,
     dangerouslyAllowBrowser: true,

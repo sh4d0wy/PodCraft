@@ -7,7 +7,7 @@ import React from "react";
 import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import Image from 'next/image'
-import BounceLoader from "react-spinners/DotLoader";
+import BounceLoader from "react-spinners/RiseLoader";
 
 export default function Middle() {
   const snap = useSnapshot(state);
@@ -28,7 +28,7 @@ export default function Middle() {
           </div>
           {(snap.loading===true && snap.sentiment ==="")&&(
             <div class="flex flex-col items-center justify-around h-screen w-full mx-auto my-20 relative bottom-20">
-             <BounceLoader color="cyan" size={100} />
+             <BounceLoader color="cyan" size={30} />
              </div>
           )}
           {(snap.flow==="audio" && snap.sentiment!=="" )&&(
@@ -46,12 +46,12 @@ export default function Middle() {
         )}
             </>
         ) : (
-          <div className="text-white text-xl leading-8 text-mono">
+          <div className="text-white flex flex-col gap-10 text-2xl leading-8 text-mono">
             <Markdown>{data}</Markdown>
             
             {(snap.loading===true && snap.sentiment ==="")&&(
             <div class="flex flex-col items-center justify-around h-screen w-full mx-auto my-20 relative bottom-20">
-             <BounceLoader color="cyan" size={100} />
+             <BounceLoader color="cyan" size={20} />
              </div>
           )}
           {(snap.flow==="audio" && snap.sentiment!=="" )&&(

@@ -43,7 +43,7 @@ const Audio = () => {
 
     const result2 = await fetch("https://api.openai.com/v1/audio/transcriptions",{
       headers:{
-          Authorization:`Bearer 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`,
+          Authorization:`Bearer ${process.env.NEXT_PUBLIC_KEY}`,
       },
       method:"POST",
       model:"whisper-1",

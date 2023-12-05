@@ -35,7 +35,7 @@ export default function Sidebar() {
           ):
           <>
              <button onClick={()=>state.flow="script"} className="p-2 text-white bg-gradient-to-tr from-gray-700 to-gray-900 rounded-lg">Script Generator</button>
-            <button onClick={()=>state.flow="audio"} className="p-2 outline outline-sky-600 text-white text-white bg-gradient-to-tr from-gray-700 to-gray-900 rounded-lg">Audio Enhancer</button>
+            <button onClick={()=>state.flow="audio"} className="p-2 outline outline-sky-600 text-white text-white bg-gradient-to-tr from-gray-700 to-gray-900 rounded-lg">Audio Analyzer</button>
           </>
           }
         </div>
