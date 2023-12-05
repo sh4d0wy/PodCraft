@@ -1,5 +1,9 @@
 # PodCraft
 
+
+https://github.com/sh4d0wy/PodCraft/assets/85192629/0bbb8434-61f2-49d0-977b-8ed39cbbf77e
+
+
 This web application, built using Next.js, is designed to streamline the process of creating podcast scripts and generating interview questions for hosts based on guest names. Along with that now you can generate pretty thumbnails with sentiment analysis of your podcast by uploading it on Audio Analyzer.
 
 ## Features
