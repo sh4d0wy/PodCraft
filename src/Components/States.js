@@ -9,7 +9,12 @@ const state = proxy({
     guest:"no",
     guestName:"",
     tone:"friendly",
-    count:""
+    count:"",
+    file:"",
+    percentage:50,
+    sentiment : "",
+    imgSource:"",
+    loading:false
 })
 
 export default state;

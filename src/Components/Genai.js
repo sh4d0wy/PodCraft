@@ -5,14 +5,15 @@ import state from "./States";
 const Genai = async ({ snap }) => {
   let string = ""
   state.generating=true;
+  console.log(process.env.NEXT_PUBLIC_KEY)
   const openai = new OpenAI({
-    apiKey: process.env.key ,
+    apiKey: process.env.NEXT_PUBLIC_KEY,
     dangerouslyAllowBrowser: true,
   });
   if (snap.guest === "yes") {
     var prompt1 = `Provide me the script of a podcast on the topic ${snap.title} in ${snap.tone} tone  with word count upto ${snap.count} and generate questions for the guest ${snap.guestName} asking about their experiences in markdown  `;
   } else {
-    var prompt1 = `Provide me the script of a podcast on the topic ${snap.title} in ${snap.tone} tone with word count upto ${snap.count} in markdown with propper styling of headings and text`;
+    var prompt1 = `Provide me the script of a podcast on the topic ${snap.title} in ${snap.tone} tone with word count upto ${snap.count} in markdown with propper styling of headings and text in markdown`;
   }
   try {
     const apiRequestBody = {
@@ -32,7 +33,7 @@ const Genai = async ({ snap }) => {
       method: "POST",
       headers: {
         Authorization:
-          "Bearer " + "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",
+          "Bearer " + process.env.NEXT_PUBLIC_KEY,
         "Content-Type": "application/json",
       },
       body: JSON.stringify(apiRequestBody),

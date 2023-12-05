@@ -1,8 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    env:{
-        key:"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"
-    }
+    images: {
+        remotePatterns: [
+          {
+            protocol: 'https',
+            hostname: 'oaidalleapiprodscus.blob.core.windows.net',
+            port: '',
+            pathname: '/private/**',
+          },
+        ],
+      },
+
 }
 
 module.exports = nextConfig

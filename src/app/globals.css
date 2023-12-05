@@ -17,3 +17,8 @@
 strong,h1{
     font-size:1.4rem;
 }
+.circle{
+    width:5rem;
+    height:5rem;
+    stroke-width: 200px;
+}
