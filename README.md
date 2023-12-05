@@ -28,7 +28,8 @@ This web application, built using Next.js, is designed to streamline the process
 
 1. Clone this repository.
 2. Install dependencies using `npm install` or `yarn install`.
-3. Provide the necessary environment variables in `.env.local` file inside the root directory.
+3. Provide the environment variables in `.env.local` file inside the root directory.
+   - NEXT_PUBLIC_KEY = _OpenAI Api Key_
 4. Run the development server using `npm run dev` or `yarn dev`.
 5. Open your browser and visit `http://localhost:3000` to access the application.
 
